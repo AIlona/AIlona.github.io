@@ -43,23 +43,31 @@
 										<p>My research interests include the numerical analysis of partial differential systems, mathematical modeling, and scientific computation. I've been working on developing both theoretical and numerical basis for modeling interaction of fluid flow and poroelastic media with various applications, including hydralic fracturing and hemodynamics. </p>
 										
 									<h2>List of projects</h2>
-													<font size='5'><span class="image left"><img src="images/pres.png" alt="" /></span> <i>"Higher order multipoint flux mixed finite element methods on
+													<font size='5'><span class="image left"><img src="images/transport.png" alt="" /></span> <i>"Flow and transport in fractured poroelastic media", </i></font><br/>
+
+													<font size='5'><i>I. Ambartsumyan, E. Khattatov, T. Nguyen, I. Yotov.</i></font>
+													<p> </p>
+													<p>We study flow and transport in fractured poroelastic media using Stokes flow in the fractures and the Biot model in the porous media. The Stokes-Biot model is coupled with an advection-diffusion equation for modeling transport of chemical species within the fluid. The continuity of flux on the fracture-matrix interfaces is imposed via a Lagrange multiplier. The coupled system is discretized by a finite element method using Stokes elements, mixed Darcy elements, conforming displacement elements, and discontinuous Galerkin for transport. The stability and convergence of the coupled scheme are analyzed. Computational results verifying the theory as well as simulations of flow and transport in fractured poroelastic media are presented. </p>
+<p> Status: to appear in <a href="https://www.springer.com/mathematics/applications/journal/13137">GEM-International Journal on Geomathematics </a>. View preprint <a href="https://www.researchgate.net/publication/324483198_Flow_and_transport_in_fractured_poroelastic_media">here </a>.</p><br/>
+
+
+													<font size='5'><span class="image right"><img src="images/pres.png" alt="" /></span> <i>"Higher order multipoint flux mixed finite element methods on
 														quadrilaterals and hexahedra", </i></font><br/>
 
 													<font size='5'><i>I. Ambartsumyan, E. Khattatov, J. Lee, I. Yotov.</i></font>
 													<p> </p>
-													<p>We develop a procedure that allows to derive an arbitrary order finite volume methods for solving elliptic problems on quadrilateral and hexahedral grids that reduces the underlying mixed finite element method to cell-centered pressure system. The construction is motivated by the multipoint flux approximation (MPFA) method and the multipoint flux mixed finite element (MFMFE) method, where the latter is based on the lowest order Brezzi-Douglas-Marini mixed finite element method. The new family of mixed finite elements is constructed, which, with a special quadrature rule being employed, allows for local velocity elimination and leads to a symmetric and positive definite cell-centered system for the pressures. Theoretical and numerical results indicate optimal <img src="http://latex.codecogs.com/svg.latex?k" border="0"/>-th order of convergence for velocities and pressures in their natural norms. Superconvergence of order <img src="http://latex.codecogs.com/svg.latex?k+1" border="0"/> was analyzed and observed numerically for the pressures at the respective nodes. </p>
-<p> Status: submitted to <a href="http://www.ams.org/publications/journals/journalsframework/mcom">Mathematics of Computation </a>. Download <a href="papers/higher_order.pdf">paper </a>.</p><br/>
+													<p>We develop higher order multipoint flux mixed finite element (MFMFE) methods for solving elliptic problems on quadrilateral and hexahedral grids that reduce to cell-based pressure systems. The methods are based on a new family of mixed finite elements, which are enhanced Raviart-Thomas spaces with bubbles that are curls of specially chosen polynomials. The velocity degrees of freedom of the new spaces can be associated with the points of tensor-product Gauss-Lobatto quadrature rules, which allows for local velocity elimination and leads to a symmetric and positive definite cell-based system for the pressures. We prove optimal <img src="http://latex.codecogs.com/svg.latex?k" border="0"/>-th order convergence for the velocity and pressure in their natural norms, as well as <img src="http://latex.codecogs.com/svg.latex?(k+1)" border="0"/>-st order superconvergence for the pressure at the Gauss points. Moreover, local postprocessing gives a pressure that is superconvergent of order $(k+1)$ in the full <img src="http://latex.codecogs.com/svg.latex?L^2" border="0"/>-norm. Numerical results illustrating the validity of our theoretical results are included.  </p>
+<p> Status: submitted to <a href="https://www.worldscientific.com/worldscinet/m3as">Mathematical Models and Methods in Applied Sciences of Computation </a>. View preprint <a href="https://www.researchgate.net/publication/320486697_Higher_order_multipoint_flux_mixed_finite_element_methods_on_quadrilaterals_and_hexahedra">here </a>.</p><br/>
 
 
-<font size='5'><span class="image right"><img src="images/stressX.png" alt="" /></span> <i>"Coupled multipoint flux and multipoint stress mixed finite element method for the Biot poroelasticity model", </i></font><br/>
+<font size='5'><span class="image left"><img src="images/stressX.png" alt="" /></span> <i>"Coupled multipoint flux and multipoint stress mixed finite element method for the Biot poroelasticity model", </i></font><br/>
 
 													<font size='5'><i>I. Ambartsumyan, E. Khattatov, I. Yotov.</i></font>
 													<p> In this work we present a mixed finite element method for five-field Biot's consolidation model that reduces to cell-centered finite differences for displacement and pressure on quadrilateral and simplicial grids. The method is guaranteed to perform robustly with discontinuous full tensor permeability coefficients and heterogeneous elasticity parameters, which is verified by the error analysis. Our approach is motivated by multipoint flux approximation (MPFA) method and multipoint stress approximation (MPSA) methods, while the approach we take is based on more recent multipoint flux mixed finite element (MFMFE) method and multipoint stress mixed finite element (MSMFE) method, for Darcy and linear elasticity models, respectively. Our scheme couples the latter two methods for the spatial discretization of the Biot's poroelasticity system, and is based on the lowest order Brezzi-Douglas-Marini mixed finite element spaces. The special quadrature rule is then employed, that allows for the local stress, rotation and velocity elimination and leads to a symmetric and positive-definite system for displacements and pressures. Theoretical and numerical studies indicate first-order accuracy in all variables in their natural norms.</p>
 												
 <p> Status: work in progress.</p><br/>
 
-<font size='5'><span class="image left"><img src="images/stress.png" alt="" /></span> <i>"Mixed finite volume methods for linear elasticity", </i></font><br/>
+<font size='5'><span class="image right"><img src="images/stress.png" alt="" /></span> <i>"Mixed finite volume methods for linear elasticity", </i></font><br/>
 
 													<font size='5'><i>I. Ambartsumyan, E. Khattatov, I. Yotov.</i></font>
 													<p> </p>
@@ -71,11 +79,11 @@ centered system for the displacements. Theoretical and numerical results indicat
 first-order convergence for all variables in the natural norms. </p>
 <p> Status: published in <a href="http://www.springer.com/us/book/9783319573960"> <i>"Finite Volumes for Complex Applications VIII"</i></a>, Springer. Download <a href="papers/fv_proceed.pdf">paper </a>.</p><br/> </br></br></br>
 
-<font size='5'><span class="image right"><img src="images/lin_stokes_vel_str_300_new.png" alt="" /></span> <i>"A nonlinear Biot-Stokes model
+<font size='5'><span class="image left"><img src="images/lin_stokes_vel_str_300_new.png" alt="" /></span> <i>"A nonlinear Biot-Stokes model
 
 for the interaction of a non-Newtonian fluid with poroelastic media, parts I<img src="http://latex.codecogs.com/svg.latex?\&" border="0"/>II", </i></font><br/>
 
- <font size='5'><i>I. Ambartsumyan, V.J Ervin, T. Nguen, I. Yotov.</i></font>
+ <font size='5'><i>I. Ambartsumyan, V.J Ervin, T. Nguyen, I. Yotov.</i></font>
 													<p> </p>
 													<p>We propose and analyze a model for solving the coupled problem arising in the interaction of a
 free fluid with a poroelastic structure. The flow in the fluid region is described by Stokes equations
@@ -84,16 +92,16 @@ regions exhibits properties that cannot be captured by a Newtonian fluid assumpt
 during water flooding in oil extraction, polymeric solutions are often added to the aqueous phase to
 increase its viscosity, resulting in a more stable displacement of oil by the injected water. Another example is related to hemodynamics, where the blood flow simulations using the Newtonian fluid
 models are sufficiently accurate in case for flows in large arteries. However, in the small vessels or for patients with cardiovascular disease, where the arterial geometry has been altered to include regions of recirculation, one needs to consider more complex models that can capture important properties of blood. Motivated by such applications, we focus on the quasi-Newtonian fluids with a shear-thinning property. </p> 
-<p> Status: work in progress.</p><br/>
+<p> Status: work in progress. View preprint of the first part <a href="https://www.researchgate.net/publication/323550183_A_nonlinear_Stokes-Biot_model_for_the_interaction_of_a_non-Newtonian_fluid_with_poroelastic_media_I_well-posedness_of_the_model">here </a>.</p><br/>
 
-<font size='5'><span class="image left"><img src="images/displacement.png" alt="" /></span> <i>"A multipoint stress mixed finite element method for elasticity, parts I<img src="http://latex.codecogs.com/svg.latex?\&" border="0"/>II", </i></font><br/>
+<font size='5'><span class="image right"><img src="images/displacement.png" alt="" /></span> <i>"A multipoint stress mixed finite element method for elasticity, parts I<img src="http://latex.codecogs.com/svg.latex?\&" border="0"/>II", </i></font><br/>
 
 													<font size='5'><i>I. Ambartsumyan, E. Khattatov, J. Nordbotten, I. Yotov.</i></font>
 													<p> </p>
 													<p>We develop a new mixed finite element method for linear elasticity model with weakly enforced symmetry on simplicial (2 and 3 dimensional) and quadrilateral grids. Motivated by the multipoint flux mixed finite element method for flow in porous media, the method utilizes lowest order Brezzi-Douglas-Marini finite element spaces and the trapezoidal (vertex) quadrature rule in order to localize the interaction of degrees of freedom. In particular, this allows for local elimination of stress and rotation variables around each vertex and leads to a cell-centered system for the displacements. The stability analysis shows that the method is well-posed on simlicial and quadrilateral grids. Theoretical and numerical results indicate first-order convergence for all variables in the natural norms. The duality argument is further employed to prove the superconvergence of the displacements at cell centers. </p>
-<p> Status: preprint. Download <a href="papers/MSMFEM_poster.pdf">poster </a>. </p><br/> 
+<p> Status: preprint. Download <a href="papers/MSMFEM_poster.pdf">poster </a>. View preprint of the first part <a href="https://www.researchgate.net/publication/325395835_A_multipoint_stress_mixed_finite_element_method_for_elasticity_I_Simplicial_grids">here </a>.</p><br/> 
 
-<font size='5'><span class="image right"><img src="images/struct_pres_vel.png" alt="" /></span> <i>"A Lagrange multiplier method for a Stokes-Biot fluid-poroelastic structure interaction model", </i></font><br/>
+<font size='5'><span class="image left"><img src="images/struct_pres_vel.png" alt="" /></span> <i>"A Lagrange multiplier method for a Stokes-Biot fluid-poroelastic structure interaction model", </i></font><br/>
 
  <font size='5'><i>I. Ambartsumyan, E. Khattatov I. Yotov, P. Zunino.</i></font>
 													<p> </p>
@@ -102,24 +110,23 @@ medium and free fluid. The free fluid is governed by the Stokes equations, while
 imposed on the interface via the Lagrange multiplier method. A complete stability and error analysis is performed for the semi-discrete continuous-in-time and the fully discrete
 formulations. A series of numerical experiments are presented to confirm the theoretical convergence rates and to study the applicability of the method to modeling physical phenomena and the
 sensitivity of the model with respect to its parameters. </p> 
-<p> Status: submitted to <a href="http://www.springer.com/mathematics/computational+science+%26+engineering/journal/211">Numerische Mathematik </a>. Download <a href="papers/LM_paper.pdf">paper </a> or <a href="papers/LM_poster.pdf">poster </a>.</p><br/>
+<p> Status: published in <a href="http://www.springer.com/mathematics/computational+science+%26+engineering/journal/211">Numerische Mathematik </a>. View <a href="https://link.springer.com/article/10.1007/s00211-018-0967-1?wt_mc=Internal.Event.1.SEM.ArticleAuthorOnlineFirst">paper </a> or <a href="papers/LM_poster.pdf">poster </a>.</p><br/>
 
-<font size='5'><span class="image left"><img src="images/C1.png" alt="" /></span> <i>"Simulation of flow in fractured poroelastic media: a comparison of different discretization approaches", </i></font><br/>
+<font size='5'><span class="image right"><img src="images/C1.png" alt="" /></span> <i>"Simulation of flow in fractured poroelastic media: a comparison of different discretization approaches", </i></font><br/>
 
 													<font size='5'><i>I. Ambartsumyan, E. Khattatov, I. Yotov, P. Zunino.</i></font>
 													<p> </p>
 													<p>We study two finite element computational models for solving coupled problems involving flow in a fracture and flow in poroelastic media. The Brinkman equation is used in the fracture, while the Biot system of poroelasticity is employed in the surrounding media. Appropriate equilibrium and kinematic conditions are imposed on the interfaces. We focus on the approximation of the interface conditions, which in this context feature the interaction of different variables, such as velocities, displacements, stresses and pressures. The aim of this study is to compare the Lagrange multiplier and the Nitsche’s methods applied to enforce these non standard interface conditions. </p>
 <p> Status: published in <a href="http://www.springer.com/us/book/9783319202389">Finite Difference Methods,Theory and Applications, FDM 2014 </a>. Download <a href="papers/fpsi_proceed.pdf">paper </a>. </p><br/> </br>
 
-<font size='5'><span class="image right"><img src="images/perm400KL-1.png" alt="" /></span> <i>"Stochastic multiscale flux basis for Stokes- Darcy flows", </i></font><br/>
+<font size='5'><span class="image left"><img src="images/perm400KL-1.png" alt="" /></span> <i>"Stochastic multiscale flux basis for Stokes- Darcy flows", </i></font><br/>
 
  <font size='5'><i>I. Ambartsumyan, E. Khattatov C. Wang, I. Yotov.</i></font>
 													<p> </p>
-													<p>We present one traditional and two multiscale flux basis implementations for coupled Stokes and Darcy flows with stochastic permeability, with its log represented as a sum of local Karhunen-Loève (KL) expansions. The problem is approximated by stochastic collocation on either a tensor product or a sparse grid, coupled with multiscale mortar mixed finite element method using non-overlapping domain decomposition for the spatial discretization. A coarse scale mortar interface problem is formulated and solved by iterative solver. In the traditional implementation, each subdomain solves
-local Dirichlet or Neumann problem in every interface iteration. To reduce this cost, two algorithms based on deterministic or stochastic multiscale flux basis are introduced, where the latter is formed by looping all local realizations of a subdomain’s KL region in a precomputation loop before the stochastic collocation begins. Some numerical tests are presented to illustrate the performances of these algorithms, with the stochastic multiscale flux basis showing a great advantage in computational cost among all. </p> 
-<p> Status: preprint.</p><br/>
+													<p>Three algorithms are developed for uncertainty quantification in modeling coupled Stokes and Darcy flows. The porous media may consist of multiple regions with different properties. The permeability is modeled as a non-stationary stochastic variable, with its log represented as a sum of local Karhunen-Loeve (KL) expansions. The problem is approximated by stochastic collocation on either tensor-product or sparse grids, coupled with a multiscale mortar mixed finite element method for the spatial discretization. A non-overlapping domain decomposition algorithm reduces the global problem to a coarse scale mortar interface problem, which is solved by an iterative solver, for each stochastic realization. In the traditional implementation, each subdomain solves a local Dirichlet or Neumann problem in every interface iteration. To reduce this cost, two additional algorithms based on deterministic or stochastic multiscale flux basis are introduced. The basis consists of the local flux (or velocity trace) responses from each mortar degree of freedom. It is computed by each subdomain independently before the interface iteration begins. The use of the multiscale flux basis avoids the need for subdomain solves on each iteration. The deterministic basis is computed at each stochastic collocation and used only at this realization. The stochastic basis is formed by further looping over all local realizations of a subdomain's KL region before the stochastic collocation begins. It is reused over multiple realizations. Numerical tests are presented to illustrate the performance of the three algorithms, with the stochastic multiscale flux basis showing significant savings in computational cost. </p> 
+<p> Status: preprint. View preprint <a href="https://www.researchgate.net/publication/323276558_Stochastic_multiscale_flux_basis_for_Stokes-Darcy_flows">here </a>.</p><br/>
 
-<font size='5'><span class="image left"><img src="images/ima.png" alt="" /></span> <i>"Mapping of temperatures from coarser to finer grid using temporal derivatives", </i></font><br/>
+<font size='5'><span class="image right"><img src="images/ima.png" alt="" /></span> <i>"Mapping of temperatures from coarser to finer grid using temporal derivatives", </i></font><br/>
 
 													<font size='5'><i>I. Ambartsumyan, E. Khattatov, C. He, S. Kim,L. Mrad.</i></font>
 													<p> </p>
@@ -188,14 +195,14 @@ local Dirichlet or Neumann problem in every interface iteration. To reduce this 
 									</header>
 									<p></p>
 									<ul class="contact">
-										<li class="fa-envelope-o">ila6@pitt.edu</li>
+										<li class="fa-envelope-o">ailona@austin.utexas.edu</li>
 										<li class="fa-phone">(412) 961-3194</li>
 									</ul>
 								</section>
 
 							<!-- Footer -->
 								<footer id="footer">
-									<p class="copyright">&copy; Ilona Ambartsumyan, 2017. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+									<p class="copyright">&copy; Ilona Ambartsumyan, 2018. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 								</footer>
 
 						</div>
